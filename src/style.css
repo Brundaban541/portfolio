@@ -1,0 +1,5 @@
+.main-container{
+   scroll-snap-type: y mandatory;
+   overflow-y: auto;
+   overscroll-behavior: contain;
+}

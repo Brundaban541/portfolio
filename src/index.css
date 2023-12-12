@@ -1,0 +1,115 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+   .btn {
+      background: linear-gradient(
+         92.23deg,
+         #ff56f6 21.43%,
+         #b936ee 50.63%,
+         #3bace2 100%,
+         #406aff 117.04%
+      );
+      box-shadow: 0px 5px 107.23px rgba(0, 0, 0, 0.80)
+   }
+
+   .btn:hover{
+      background: linear-gradient(
+         92.23deg,
+         #406aff 21.43%,
+         #3bace2 50.63%,
+         #b936ee 100%,
+         #ff56f6 117.04%
+      );
+   }
+
+   .gradient,
+   .active{
+      background: linear-gradient(
+         92.23deg,
+         #406aff 21.43%,
+         #3bace2 50.63%,
+         #b936ee 100%,
+         #ff56f6 11704%
+      );
+   }
+
+   .active{
+      color: #ffffff;
+      padding: auto;
+      border-radius: 100%;
+   }
+
+   @layer base {
+      body {
+         @apply font-secondary text-lg leading-6 text-white;
+      }
+      .h2 {
+         @apply font-primary text-[32px] mb-6 tracking-[10%] uppercase;
+      }
+      .h3 {
+         @apply font-semibold text-[26px] mb-6 leading-[46px];
+      }
+      .btn {
+         @apply rounded-full font-primary text-white font-medium;
+      }
+      .btn-sm {
+         @apply h-[38px] px-2 text-sm;
+      }
+      .btn-lg {
+         @apply h-[56px] px-10 text-base;
+      }
+      .btn-link {
+         @apply max-md:text-sm lg:text-base;
+      }
+      .text-gradient{
+         @apply bg-gradient-to-r text-transparent bg-clip-text from-[#42A6E3] to-[#FF56F6]
+         font-bold font-primary hover:from-[#FF56F6] hover:to-[#42A6E3]
+      }
+      .section{
+         @apply py-8 lg:max-xxl:py-24 flex items-center mx-auto max-w-[85vw] snap-start;
+      }
+     
+   }
+   .active-tabs{
+      background: linear-gradient(
+         92.23deg,
+         #406aff 21.43%,
+         #3bace2 50.63%,
+         #b936ee 100%,
+         #ff56f6 117.04%
+      );
+      box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+      border-radius: 50px;
+
+   }
+   .content{
+      display: none;
+   }
+   .active-content{
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+
+   }
+   @media only screen and (max-width: 1024px) {
+      .active-content{
+         display: flex;
+         flex-direction: column;
+      }
+   }
+   .lg-text-shadow {
+      text-shadow: 4px 3px 4px rgba(0,0,0,0.81);
+   }
+   .sm-text-shadow{
+      text-shadow: 1px 1px 2px rgba(0,0,0,0.81);
+   }
+   .dialog-shadow{
+      box-shadow: 0px 0px 22px 0px rgba(0,0,0,0.75);
+   }
+   ::-webkit-scrollbar-track {
+      border-radius: 5px;
+   }
+   ::-webkit-scrollbar-thumb {
+      border-radius: 5px;
+   }
