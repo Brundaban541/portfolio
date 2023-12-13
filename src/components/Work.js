@@ -376,7 +376,7 @@ function Tab () {
                      <li className="text-base text-white font-normal">It is saved/hosted through git repository using gitbash command.</li>
                   </ol>
                </div>
-               <div className="dialog-shadow border xs:max-md:m-3 p-1  rounded-lg">
+               <div className="dialog-shadow border xs:max-md:m-3 p-1 lg:mt-auto rounded-lg">
                   <img className="
                      rounded-lg 
                      max-md:min-w-[75vw] 
