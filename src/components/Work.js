@@ -382,7 +382,6 @@ function Tab () {
                      max-md:min-w-[75vw] 
                      max-md:min-h-[25vh] 
                      lg:max-w-[50vw] 
-                     
                      h-max"
                      src={project} alt=""
                   />
